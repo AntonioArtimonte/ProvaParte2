@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario add pontos</title>
+</head>
+<body>
+    <form action="/novo" method="post">
+        <label style="margin-right: 5px;">X</label>
+        <input type="text" name="coord_x" placeholder="Coordenada X" style="margin-left: 10px;">
+        <label style="margin-right: 5px;">Y</label>
+        <input type="text" name="coord_y" placeholder="Coordenada Y"style="margin-left: 10px;">
+        <label style="margin-right: 5px;">Z</label>
+        <input type="text" name="coord_z" placeholder="Coordenada Z"style="margin-left: 10px;">
+        <label style="margin-right: 5px;">R</label>
+        <input type="text" name="rotation" placeholder="Rotação do Braço"style="margin-left: 10px;">
+        <button type="submit" style="margin-left: 15px;">Enviar</button>
+    </form>
+    <form action="/pegar_caminho" method="post" style="margin-top: 40px;">
+        <label>Digite o ID para pegar apenas este caminho</label>
+        <input type="text" name="id" placeholder="ID" style="margin-left: 10px;">
+        <button type="submit" style="margin-left: 15px;">Enviar</button>
+    </form>
+    <form action="/deletar_caminho" method="post" style="margin-top: 40px;">
+        <label>Digite o ID para deletar este caminho</label>
+        <input type="text" name="id" placeholder="ID" style="margin-left: 10px;">
+        <button type="submit" style="margin-left: 15px;">Enviar</button>
+    </form>
+    <form action="/atualizar_caminho" method="post" style="margin-top: 40px;">
+        <label>Digite o ID para atualizar este caminho</label>
+        <input type="text" name="id" placeholder="ID" style="margin-left: 10px;">
+        <button type="submit" style="margin-left: 15px;">Enviar</button>
+    </form>
+
+    <h1>Botão para atualizar um caminho</h1>
+    <button><a href="/att_caminho">Atualizar caminho</a></button>
+</body>
+</html>
